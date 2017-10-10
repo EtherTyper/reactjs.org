@@ -82,7 +82,7 @@
     "prettier:diff": "prettier --config .prettierrc --list-different '{flow-typed,plugins,src}/**/*.js'",
     "reset": "rimraf ./.cache",
     "start": "serve dist",
-    "heroku-postbuild": "npm build"
+    "heroku-postbuild": "ls && npm build"
   },
   "devDependencies": {
     "eslint-config-prettier": "^2.6.0"
