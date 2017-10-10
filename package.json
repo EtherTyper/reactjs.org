@@ -55,7 +55,8 @@
     "slugify": "^1.2.1",
     "string.prototype.includes": "^1.0.0",
     "string.prototype.repeat": "^0.2.0",
-    "unist-util-visit": "^1.1.3"
+    "unist-util-visit": "^1.1.3",
+    "serve": "^6.2.0"
   },
   "engines": {
     "node": ">=8.4.0"
@@ -79,7 +80,9 @@
     "netlify": "yarn install && yarn build",
     "prettier": "prettier --config .prettierrc --write '{flow-typed,plugins,src}/**/*.js'",
     "prettier:diff": "prettier --config .prettierrc --list-different '{flow-typed,plugins,src}/**/*.js'",
-    "reset": "rimraf ./.cache"
+    "reset": "rimraf ./.cache",
+    "start": "serve dist",
+    "heroku-postbuild": "npm build"
   },
   "devDependencies": {
     "eslint-config-prettier": "^2.6.0"
